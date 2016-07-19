@@ -1,9 +1,10 @@
 class HeaderController {
   /* @ngInject */
 
-  constructor(HeaderService) {
+  constructor(HeaderService, $rootScope, $mdSidenav) {
     this.name = 'Header Controller';
     this.headerService = HeaderService;
+    this.$mdSidenav = $mdSidenav;
     // this.init();
   }
 
@@ -12,6 +13,10 @@ class HeaderController {
       .then((response) => {
         this.info = response.data;
       });
+  }
+
+  toggleSidenav(menuId) {
+    this.$mdSidenav(menuId).toggle();
   }
 }
 

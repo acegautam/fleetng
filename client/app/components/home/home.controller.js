@@ -7,10 +7,15 @@ class HomeController {
     // this.init();
   }
 
-  init(){
+  init() {
+    // Initialization tasks
+  }
+
+  getInfo() {
     this.homeService.getInfo()
       .then((response) => {
         this.info = response.data;
+        console.log(this.info);
       });
   }
 }
