@@ -1,12 +1,16 @@
 {
   "name": "fleetng",
   "version": "0.0.1",
-  "description": "Angular Seed with ES6 + Webpack + Less + Bootstrap",
+  "description": "Angular Seed with ES6 | webpack | less | angular-material",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.5.0",
+    "angular-animate": "^1.5.7",
+    "angular-aria": "^1.5.7",
+    "angular-material": "^1.1.0-rc.5",
+    "angular-material-icons": "^0.7.1",
     "angular-ui-router": "^0.2.15",
-    "bootstrap": "^3.3.6",
+    "i": "^0.3.5",
     "lodash": "^4.11.2",
     "normalize.css": "^4.1.1"
   },
@@ -66,5 +70,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/acegautam/fleetng.git"
-  }
+  },
+  "author": "Gautam M",
+  "license": "Apache-2.0"
 }
