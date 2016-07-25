@@ -33,9 +33,13 @@ angular.module('app', [
         'default': '500',
         'hue-1': '50'
       })
-      .accentPalette('pink');
+      .accentPalette('pink')
+      .dark();
     $mdThemingProvider.theme('input', 'default')
       .primaryPalette('grey');
+
+    // $mdThemingProvider.theme('default')
+    // .dark();
 })
 
 .component('app', AppComponent);

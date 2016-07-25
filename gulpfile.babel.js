@@ -38,6 +38,7 @@ let paths = {
   vendorEntry: path.join(__dirname, root, 'app/vendor.js'),
   output: root,
   blankTemplates: path.join(__dirname, 'generator', 'component/**/*.**'),
+  json: path.join(__dirname, 'json/**/*.json'),
   dest: path.join(__dirname, 'public')
 };
 
@@ -58,6 +59,7 @@ gulp.task('build', ['clean'], (callback) => {
       errorDetails: true
     }));
 
+    gulp.src(paths.json).pipe(gulp.dest(paths.dest));
     callback();
   });
 });
