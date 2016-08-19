@@ -4,6 +4,7 @@ import controller from './info.controller';
 let infoComponent = {
   restrict: 'E',
   bindings: {
+    dtitle: '<',
     message: '=',
     features: '=',
     selectedfeature: '=',

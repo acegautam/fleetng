@@ -5,6 +5,7 @@ class AboutController {
 
   constructor(AboutService, $mdDialog) {
     this.name = 'About Me';
+    this.directiveTitle = 'INFO - I am an embedded component inside About Me';
     this.info = null;
     this.$mdDialog = $mdDialog;
     this.comment = 'My first comment';
@@ -19,7 +20,7 @@ class AboutController {
         console.log(this.info);
       });
   }
-  
+
   showMesssage(message){
     this.showInfoDialog(message);
   }

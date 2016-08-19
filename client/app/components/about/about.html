@@ -2,9 +2,11 @@
   <h2>{{ vm.name }}</h2>
   <md-divider></md-divider>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <i>UI Frontender, amateur photographer &amp; a green thumb hobbyist.</i><br /><br />
   </p>
-  <h2>Default - {{vm.comment || "None"}}</h2>
-  <h2 ng-if="vm.selectedFeature">Selected feature :: {{vm.selectedFeature.name}} ({{vm.selectedFeature.price|currency}})</h2>
-  <info message="vm.comment" features="vm.info" states="vm.states" selectedfeature="vm.selectedFeature" showmsg="vm.showMesssage(feature|currency)"></info>
+  <p>Inside parent view --- {{vm.comment || "None"}}</p>
+  <p ng-if="vm.selectedFeature">Selected feature :: {{vm.selectedFeature.name}} ({{vm.selectedFeature.price|currency}})</p>
+  <md-divider></md-divider>
+
+  <info dtitle="vm.directiveTitle" message="vm.comment" features="vm.info" states="vm.states" selectedfeature="vm.selectedFeature" showmsg="vm.showMesssage(feature|currency)"></info>
 </div>
