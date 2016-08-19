@@ -2,9 +2,11 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import aboutComponent from './about.component';
 import aboutService from './about.service';
+import Info from './info/info';
 
 let aboutModule = angular.module('about', [
-  uiRouter
+  uiRouter,
+  Info.name
 ])
 
 .config(($stateProvider) => {
