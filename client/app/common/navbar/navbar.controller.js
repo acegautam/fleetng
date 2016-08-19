@@ -11,7 +11,6 @@ class NavbarController {
   }
 
   isTabActive(state){
-    console.log(this.$location.path());
     return (state === this.$location.path());
   }
   toggleSidenav(menuId) {
